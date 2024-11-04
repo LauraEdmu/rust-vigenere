@@ -78,6 +78,9 @@ fn get_key() -> String {
 }
 
 fn main() {    
+    println!("Vigenère Cipher © 2024 — Laura E. (laura.e.git@pm.me)");
+    println!(); // Empty line
+    
     // Let user choose if decrypting or encrypting
     print!("Enter 1 to encrypt, 2 to decrypt: ");
     io::stdout().flush().unwrap(); // Ensures prompt is displayed before input
@@ -109,4 +112,9 @@ fn main() {
     // Output the result to a file
     let mut file = std::fs::File::create("output.txt").unwrap();
     file.write_all(result.as_bytes()).unwrap();
+
+    // Keep the window open until the user presses a key
+    println!("Press Enter to exit...");
+    let mut exit = String::new();
+    std::io::stdin().read_line(&mut exit).unwrap();
 }

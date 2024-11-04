@@ -45,4 +45,4 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## Contact
 
-For any questions or feedback, please contact the project maintainer.
+For any questions or feedback, please contact the project maintainer via github or email:  [laura.e.git@pm.me](mailto:laura.e.git@pm.me)
